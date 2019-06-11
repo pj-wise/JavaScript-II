@@ -79,12 +79,10 @@ function contains(item, list, cb) {
 }
 
 function contains(item, list, cb) {
-  if(cb(list.includes(item)) = true){
-    return cb(true);
-  } else return cb(false);
+  cb(list.includes(item));
 }
 
-contains('Pencil', arr.length, function(contains){
+contains('Pencil', items, function(contains){
   console.log(contains);
 })
 
